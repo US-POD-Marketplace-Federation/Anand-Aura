@@ -1,0 +1,58 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.top-navigation {
+  --igx-navbar-text-color: var(--ig-surface-500-contrast);
+  --igx-navbar-background: var(--ig-surface-500);
+  z-index: 1;
+  position: sticky;
+  height: max-content;
+  min-width: min-content;
+}
+.main-container {
+  overflow: auto;
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  flex-grow: 1;
+}
+.navbar-content {
+  gap: 1rem;
+}
+.row-layout {
+  display: flex;
+}
+.brand {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.brand-icon {
+  --size: 24px;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.brand-title {
+  height: max-content;
+  min-width: min-content;
+}
+.icon {
+  color: var(--ig-surface-500-contrast);
+}
+.how-it-works {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+}
+.search {
+  --foreground: var(--ig-surface-500-contrast);
+}

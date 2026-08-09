@@ -1,0 +1,158 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+}
+.row-layout {
+  display: flex;
+}
+.login-flow {
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 32px;
+  position: relative;
+  padding: 32px;
+  min-width: min-content;
+  min-height: 0;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.login-titles {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.login-social-options {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 16px;
+  min-height: 16px;
+  flex-shrink: 0;
+}
+.separator-block {
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 16px;
+  min-height: 16px;
+  flex-shrink: 0;
+}
+.left-line {
+  border-color: var(--ig-gray-300);
+  border-width: 2px 0px 0px;
+  border-style: solid;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 0;
+  position: relative;
+  min-width: unset;
+  max-width: unset;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.login-fields {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.remember-and-forgot-options {
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 16px;
+  min-height: 16px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.login-footer-nav {
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 16px;
+  min-height: 16px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.login-form {
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 32px;
+  position: relative;
+  min-width: 320px;
+  min-height: 50px;
+  max-width: 560px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.google-sign-in {
+  --ig-size: var(--ig-size-large);
+  height: max-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.email-input {
+  height: max-content;
+  min-width: min-content;
+}
+.remember-checkbox {
+  width: max-content;
+  height: max-content;
+}
+.sign-in-submit {
+  --ig-size: var(--ig-size-large);
+  height: max-content;
+}
+.content {
+  height: max-content;
+  min-width: min-content;
+}
+.separator-label {
+  text-align: center;
+  color: var(--ig-gray-800);
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.forgot-password-link {
+  color: var(--ig-primary-500);
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.footer-action {
+  color: var(--ig-info-500);
+  cursor: pointer;
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}

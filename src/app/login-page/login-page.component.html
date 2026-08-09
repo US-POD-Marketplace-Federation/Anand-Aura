@@ -1,0 +1,70 @@
+<div class="row-layout login-flow">
+  <form class="column-layout login-form">
+    <div class="column-layout login-titles">
+      <h4 class="content">
+        Welcome Back
+      </h4>
+      <h6 class="content">
+        Log in to your workspace growth engine.
+      </h6>
+    </div>
+    <div class="row-layout login-social-options">
+      <button igxButton="outlined" type="button" class="google-sign-in">
+        <igx-icon>
+          web_stories
+        </igx-icon>
+        <span>Google</span>
+      </button>
+      <button igxButton="outlined" type="button" class="google-sign-in">
+        <igx-icon family="imx-icon" name="imx-apple-app-store"></igx-icon>
+        <span>Apple</span>
+      </button>
+      <button igxButton="outlined" type="button" class="google-sign-in">
+        <igx-icon family="imx-icon" name="imx-facebook-messenger"></igx-icon>
+        <span>Facebook</span>
+      </button>
+    </div>
+    <div class="row-layout separator-block">
+      <div class="row-layout left-line"></div>
+      <p class="ig-typography__overline separator-label">
+        OR CONTINUE WITH EMAIL
+      </p>
+      <div class="row-layout left-line"></div>
+    </div>
+    <div class="column-layout login-fields">
+      <igx-input-group type="border" class="email-input">
+        <input type="email" [(ngModel)]="value" placeholder="you@example.com" required="true" igxInput #igxInput />
+        <label igxLabel>Email Address</label>
+        @if (igxInput.validity.valueMissing) {
+          <igx-hint>This field is required</igx-hint>
+        }
+      </igx-input-group>
+      <igx-input-group type="border" class="email-input">
+        <input type="password" [(ngModel)]="value1" placeholder="Enter your password" required="true" igxInput #igxInput1 />
+        <label igxLabel>Password</label>
+        @if (igxInput1.validity.valueMissing) {
+          <igx-hint>This field is required</igx-hint>
+        }
+      </igx-input-group>
+      <div class="row-layout remember-and-forgot-options">
+        <igx-checkbox labelPosition="after" [(ngModel)]="checked" class="remember-checkbox">
+          Remember me
+        </igx-checkbox>
+        <a class="ig-typography__body-2 forgot-password-link">
+          Forgot password?
+        </a>
+      </div>
+      <button igxButton="contained" type="submit" class="sign-in-submit">
+        Sign In
+      </button>
+    </div>
+    <div class="row-layout login-footer-nav">
+      <p class="ig-typography__body-2 content">
+        Don't have an account?
+      </p>
+      <a [routerLink]="[`/register-page`]" class="ig-typography__body-2 footer-action">
+        Register
+      </a>
+    </div>
+  </form>
+</div>
